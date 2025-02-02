@@ -1,0 +1,7 @@
+/home/nvarfolo/cuda-assignment-1-coolnikitav/CMakeFiles/lab1.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/CMakeFiles/edit_cache.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/CMakeFiles/rebuild_cache.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/src/CMakeFiles/cudaLib.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/src/CMakeFiles/cpuLib.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/src/CMakeFiles/edit_cache.dir
+/home/nvarfolo/cuda-assignment-1-coolnikitav/src/CMakeFiles/rebuild_cache.dir

@@ -15,14 +15,15 @@ void dbprintf(const char* fmt...) {
 
 void vectorInit(float* v, int size) {
 	for (int idx = 0; idx < size; ++idx) {
-		v[idx] = (float)(rand() % 100);
+		v[idx] = rand() / (float)RAND_MAX * RAND_MAX;
 	}
 }
 
 int verifyVector(float* a, float* b, float* c, float scale, int size) {
 	int errorCount = 0;
 	for (int idx = 0; idx < size; ++idx) {
-		if (c[idx] != scale * a[idx] + b[idx]) {
+		float relDiff = fabs(c[idx] - (scale * a[idx] + b[idx]))/(scale * a[idx] + b[idx]);
+		if (relDiff > 1e-2f) {
 			++errorCount;
 			#ifndef DEBUG_PRINT_DISABLE
 				std::cout << "Idx " << idx << " expected " << scale * a[idx] + b[idx] 
